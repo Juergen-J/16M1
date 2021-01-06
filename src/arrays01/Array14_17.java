@@ -1,5 +1,6 @@
 package arrays01;
 
+import com.oracle.xmlns.internal.webservices.jaxws_databinding.SoapBindingParameterStyle;
 import library.PrintArray;
 
 public class Array14_17 {
@@ -23,6 +24,7 @@ public class Array14_17 {
         System.out.println(maxTriple(new int[]{1, 2, 3}));// → 3
         System.out.println(maxTriple(new int[]{1, 5, 3}));// → 5
         System.out.println(maxTriple(new int[]{5, 2, 3}));// → 5
+        System.out.println();
 
     }
 
