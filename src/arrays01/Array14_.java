@@ -20,6 +20,11 @@ public class Array14_ {
         plusTwo(new int[]{9, 2}, new int[]{3, 4});// → [9, 2, 3, 4]
 
         System.out.println("----------------#17");
+        System.out.println(maxTriple(new int[]{1, 2, 3}));// → 3
+        System.out.println(maxTriple(new int[]{1, 5, 3}));// → 5
+        System.out.println(maxTriple(new int[]{5, 2, 3}));// → 5
+
+
 
     }
 
@@ -52,5 +57,11 @@ public class Array14_ {
         }
         PrintArray.printIntArray(result);
         return result;
+    }
+
+    public static int maxTriple(int[] array) {
+        int tempAC = Math.max(array[0], array[array.length - 1]);
+        int tempAB = Math.max(array[0], array[array.length / 2]);
+        return Math.max(tempAB, tempAC);
     }
 }
