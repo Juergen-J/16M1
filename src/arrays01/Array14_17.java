@@ -2,7 +2,7 @@ package arrays01;
 
 import library.PrintArray;
 
-public class Array14_ {
+public class Array14_17 {
     public static void main(String[] args) {
         System.out.println("----------------#14");
         makeLast(new int[]{4, 5, 6});// → [0, 0, 0, 0, 0, 6]
@@ -23,8 +23,6 @@ public class Array14_ {
         System.out.println(maxTriple(new int[]{1, 2, 3}));// → 3
         System.out.println(maxTriple(new int[]{1, 5, 3}));// → 5
         System.out.println(maxTriple(new int[]{5, 2, 3}));// → 5
-
-
 
     }
 
