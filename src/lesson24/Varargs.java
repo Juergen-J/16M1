@@ -3,13 +3,17 @@ package lesson24;
 public class Varargs {
     public static void main(String[] args) {
         addition(2, 3, 6);
-        int [] arr= new int [] {2,3,4,5};
+        int[] arr = new int[]{2, 3, 4, 5};
 
         sum();
     }
 
     private static int sum(int... allDigits) {
-
+        int mySum = 0;
+        for (int element : allDigits
+        ) {
+            mySum += element;
+        }
         return 0;
     }
 
@@ -19,9 +23,9 @@ public class Varargs {
     }
 
     public static int findArraySum(int[] array) {
-        int sum=0;
-        for (int element:array) {
-            sum+=element;
+        int sum = 0;
+        for (int element : array) {
+            sum += element;
         }
         return sum;
     }
