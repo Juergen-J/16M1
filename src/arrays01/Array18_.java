@@ -10,6 +10,16 @@ public class Array18_ {
         make2(new int[]{4, 5}, new int[]{1, 2, 3});// → [4, 5]
         make2(new int[]{4}, new int[]{1, 2, 3});// → [4, 1]
         make2(new int[0], new int[]{1, 2});// → [1, 2]
+
+        System.out.println("----------------#19");
+        makePi();// → [3, 1, 4]
+
+        System.out.println("----------------#20");
+        rotateLeft3(new int[]{1, 2, 3});// → [2, 3, 1]
+        rotateLeft3(new int[]{5, 11, 9});// → [11, 9, 5]
+        rotateLeft3(new int[]{7, 0, 0});// → [0, 0, 7]
+
+
     }
 
     public static int[] make2(int[] a, int[] b) {
@@ -26,6 +36,28 @@ public class Array18_ {
             result[0] = a[0];
             result[1] = a[1];
         }
+        PrintArray.printIntArray(result);
+        return result;
+    }
+
+    public static int[] makePi() {
+        int[] result = new int[3];
+        int pi = (int) (Math.PI * 100);
+        result[0] = pi / 100;
+        pi %= 100;
+        result[1] = pi / 10;
+        pi %= 10;
+        result[2] = pi;
+        PrintArray.printIntArray(result);
+        return result;
+    }
+
+    public static int[] rotateLeft3(int[] array) {
+        int[] result = new int[array.length];
+        for (int i = 0; i < result.length - 1; i++) {
+            result[i] = array[i + 1];
+        }
+        result[result.length - 1] = array[0];
         PrintArray.printIntArray(result);
         return result;
     }
