@@ -25,6 +25,14 @@ public class Array18_ {
         System.out.println(sum2(new int[]{1, 1, 1, 1}));// →2
 
         System.out.println("----------------#22");
+        System.out.println(has23(new int[]{2, 5}));// →true
+        System.out.println(has23(new int[]{4, 3}));// →true
+        System.out.println(has23(new int[]{4, 5}));// →false
+
+        System.out.println("----------------#23");
+        System.out.println(double23(new int[]{2, 2}));// → true
+        System.out.println(double23(new int[]{3, 3}));// → true
+        System.out.println(double23(new int[]{2, 3}));// → false
 
 
     }
@@ -78,4 +86,14 @@ public class Array18_ {
             return array[0] + array[1];
         }
     }
+
+    public static boolean has23(int[] array) {
+        return array[0] == 3 || array[1] == 3 || array[0] == 2 || array[1] == 2;
+    }
+
+    public static boolean double23(int[] array) {
+        return array[0] == 2 && array[1] == 2 || array[0] == 3 && array[1] == 3;
+    }
+
+
 }
