@@ -19,6 +19,13 @@ public class Array18_ {
         rotateLeft3(new int[]{5, 11, 9});// → [11, 9, 5]
         rotateLeft3(new int[]{7, 0, 0});// → [0, 0, 7]
 
+        System.out.println("----------------#21");
+        System.out.println(sum2(new int[]{1, 2, 3}));// →3
+        System.out.println(sum2(new int[]{1, 1}));// →2
+        System.out.println(sum2(new int[]{1, 1, 1, 1}));// →2
+
+        System.out.println("----------------#22");
+
 
     }
 
@@ -60,5 +67,15 @@ public class Array18_ {
         result[result.length - 1] = array[0];
         PrintArray.printIntArray(result);
         return result;
+    }
+
+    public static int sum2(int[] array) {
+        if (array.length == 0) {
+            return 0;
+        } else if (array.length == 1) {
+            return array[0];
+        } else {
+            return array[0] + array[1];
+        }
     }
 }
