@@ -4,7 +4,7 @@ import library.PrintArray;
 
 import java.util.PrimitiveIterator;
 
-public class Array18_ {
+public class Array18_23 {
     public static void main(String[] args) {
         System.out.println("----------------#18");
         make2(new int[]{4, 5}, new int[]{1, 2, 3});// → [4, 5]
