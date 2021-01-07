@@ -20,7 +20,7 @@ public class Array18_ {
         }
         if (a.length == 1) {
             result[0] = a[0];
-            result[0] = b[0];
+            result[1] = b[0];
         }
         if (a.length > 1) {
             result[0] = a[0];
