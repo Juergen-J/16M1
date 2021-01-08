@@ -2,14 +2,14 @@ package arrays01;
 
 import library.PrintArray;
 
-public class Array24_ {
+public class Array24_25 {
     public static void main(String[] args) {
         System.out.println("----------------#24");
         biggerTwo(new int[]{1, 2}, new int[]{3, 4});// → [3, 4]
         biggerTwo(new int[]{3, 4}, new int[]{1, 2});// → [3, 4]
         biggerTwo(new int[]{1, 1}, new int[]{1, 2});// → [1, 2]
 
-        System.out.println("----------------#24");
+        System.out.println("----------------#25");
         swapEnds(new int[]{1, 2, 3, 4});// → [4, 2, 3, 1]
         swapEnds(new int[]{1, 2, 3});// → [3, 2, 1]
         swapEnds(new int[]{8, 6, 7, 9, 5});// → [5, 6, 7, 9, 8]
