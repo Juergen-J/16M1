@@ -8,8 +8,8 @@ public class Lesson25 {
 
         for (int i = 0; i < monthCalendar.length; i++) {
             for (int j = 0; j < monthCalendar[i].length; j++) {
-                monthCalendar[i][j] = i * 7 + j + 1;
-               // System.out.println(monthCalendar[i][j]);
+                monthCalendar[i][j] = i * 7 + j + 1; //nom. Str. * kdn+ nom.k +1
+                System.out.print(monthCalendar[i][j]);
             }
             System.out.println();
         }
