@@ -33,6 +33,7 @@ public class Array24_ {
             result[i] = array[i];
         }
         result[result.length - 1] = array[0];
+        PrintArray.printIntArray(result);
         return result;
     }
 }
