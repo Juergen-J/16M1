@@ -40,7 +40,6 @@ public class String_02 {
                 count++;
             }
         }
-
         return count;
     }
 
