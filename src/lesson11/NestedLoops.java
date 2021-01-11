@@ -17,7 +17,7 @@ public class NestedLoops {
 //        diamond();
 
 //        numberTriangle(); //#6
-//        numberTriangle2(); -------------------дорешать
+//        numberTriangle2();// -------------------дорешать
 //        floydsTriangle();
 
 //        makeSnowflake(10); //-----#7   работает с любыми четными числами
