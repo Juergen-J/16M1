@@ -1,5 +1,10 @@
 package arrays01;
 
+import com.sun.scenario.effect.impl.prism.PrImage;
+import library.PrintArray;
+
+import javax.management.relation.RelationSupport;
+
 public class Array26_ {
     public static void main(String[] args) {
         System.out.println("*******************#26");
@@ -17,6 +22,7 @@ public class Array26_ {
             result[0] = array[0];
             result[1] = array[1];
         }
+        PrintArray.printIntArray(result);
         return result;
     }
 }
