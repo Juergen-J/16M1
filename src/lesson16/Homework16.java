@@ -1,6 +1,6 @@
 package lesson16;
 
-public class HomeWork16 {
+public class Homework16 {
     public static void main(String[] args) {
         System.out.println(makeBricks(3, 1, 8));// → true ----------#1
         System.out.println(makeBricks(3, 1, 9));// → false

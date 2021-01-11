@@ -1,6 +1,6 @@
 package lesson21;
 
-public class HomeWork21 {
+public class Homework21 {
     public static void main(String[] args) {
         final String ANSI_RESET = "\u001B[0m";
         final String ANSI_BLACK = "\u001B[30m";

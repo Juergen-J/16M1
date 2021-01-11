@@ -2,7 +2,7 @@ package lesson4;
 
 import java.util.SplittableRandom;
 
-public class HomeWork4 {
+public class Homework4 {
     public static void main(String[] args) {
         writeChar(); //1
         writeMyName();//2

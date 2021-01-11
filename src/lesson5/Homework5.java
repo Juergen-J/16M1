@@ -1,6 +1,6 @@
 package lesson5;
 
-public class HomeWork5 {
+public class Homework5 {
     public static void main(String[] args) {
         bigBadaBoom(true, true);// -> true -----------#1
         bigBadaBoom(false, false);// -> false

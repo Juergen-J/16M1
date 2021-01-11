@@ -1,6 +1,6 @@
 package lesson20;
 
-public class HomeWork20 {
+public class Homework20 {
     public static void main(String[] args) {
         System.out.println("-------------Rubli");
         printSumInRub(1, 100);

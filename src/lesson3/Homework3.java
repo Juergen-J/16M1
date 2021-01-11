@@ -1,6 +1,6 @@
 package lesson3;
 
-public class HomeWork3 {
+public class Homework3 {
     public static void main(String[] args) {
         final double PI = Math.PI;
         System.out.println("Circle Area: " + getCircleArea(10, PI));

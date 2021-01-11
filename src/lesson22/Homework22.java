@@ -2,7 +2,7 @@ package lesson22;
 
 import library.PrintArray;
 
-public class HomeWork22 {
+public class Homework22 {
     public static void main(String[] args) {
         double[] array = generateDoubleArray();
 

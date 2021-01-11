@@ -2,7 +2,7 @@ package lesson13;
 
 import java.util.Scanner;
 
-public class HomeWork13 {
+public class Homework13 {
     public static void main(String[] args) {
 //        System.out.println(redTicket(2, 2, 2));// → 10 ---#1
 //        System.out.println(redTicket(2, 2, 1));// → 0

@@ -3,7 +3,7 @@ package lesson25;
 import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
-public class HomeWork25 {
+public class Homework25 {
     public static void main(String[] args) {
         System.out.println("*************************#11");
         System.out.println(getMeMax(15, 5));// → 15

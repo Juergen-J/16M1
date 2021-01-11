@@ -1,6 +1,6 @@
 package lesson9;
 
-public class HomeWork9 {
+public class Homework9 {
     public static void main(String[] args) {
         System.out.println(more20(20));// → false
         System.out.println(more20(21));//→ true

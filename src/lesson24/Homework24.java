@@ -2,7 +2,7 @@ package lesson24;
 
 import library.PrintArray;
 
-public class HomeWork24 {
+public class Homework24 {
     public static void main(String[] args) {
         System.out.println("----------------#16");
         plusTwo(new int[]{1, 2}, new int[]{3, 4});// → [1, 2, 3, 4]

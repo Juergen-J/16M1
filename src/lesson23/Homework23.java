@@ -2,7 +2,7 @@ package lesson23;
 
 import library.PrintArray;
 
-public class HomeWork23 {
+public class Homework23 {
     public static void main(String[] args) {
         System.out.println("----------------#12");
         maxEnd3(new int[]{1, 2, 3});// → [3, 3, 3]

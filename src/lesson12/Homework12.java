@@ -1,6 +1,6 @@
 package lesson12;
 
-public class HomeWork12 {
+public class Homework12 {
     public static void main(String[] args) {
 //        System.out.println(inOrder(1, 2, 4, false));// → true  -----#1
 //        System.out.println(inOrder(1, 2, 1, false));// → false

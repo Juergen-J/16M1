@@ -1,6 +1,6 @@
 package lesson10;
 
-public class HomeWork10 {
+public class Homework10 {
     public static void main(String[] args) {
 //        getEvenNumber(4, 16); //> 4,6,8,10,12,14,16
 

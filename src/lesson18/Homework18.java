@@ -1,6 +1,6 @@
 package lesson18;
 
-public class HomeWork18 {
+public class Homework18 {
     public static void main(String[] args) {
 //        System.out.println(minCat("Hello", "Hi"));// → "loHi"  -------#1
 //        System.out.println(minCat("Hello", "java"));// → "ellojava"
