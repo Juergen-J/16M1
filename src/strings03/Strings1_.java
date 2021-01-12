@@ -6,6 +6,15 @@ public class Strings1_ {
         System.out.println(countYZ("fez day"));// → 2
         System.out.println(countYZ("day fez"));// → 2
         System.out.println(countYZ("day fyyyz"));// → 2
+
+        System.out.println("**************#2");
+//        System.out.println(gHappy("xxggxx"));// → true
+//        System.out.println(gHappy("xxgxx"));// → false
+//        System.out.println(gHappy("xxggyygxx"));// → false
+    }
+
+    public static boolean findTrue(String str, int i) {
+        return i == str.length() - 1;
     }
 
     public static int countYZ(String str) {
@@ -17,4 +26,6 @@ public class Strings1_ {
         }
         return count;
     }
+
+
 }
