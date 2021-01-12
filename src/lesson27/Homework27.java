@@ -16,6 +16,11 @@ public class Homework27 {
         System.out.println(starOut("ab*cd"));// → "ad"
         System.out.println(starOut("ab**cd"));// → "ad"
         System.out.println(starOut("sm*eilly"));// → "silly"
+
+        System.out.println("**************#8");
+        System.out.println(countHi("abc hi ho"));// → 1
+        System.out.println(countHi("ABChi hi"));// → 2
+        System.out.println(countHi("hihi"));// → 2
     }
 
     public static int blackjack(int a, int b) {
@@ -67,5 +72,13 @@ public class Homework27 {
         return result;
     }
 
-
+    public static int countHi(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'h' && str.charAt(i + 1) == 'i') {
+                count++;
+            }
+        }
+        return count;
+    }
 }
