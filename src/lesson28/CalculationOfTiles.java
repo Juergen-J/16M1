@@ -39,11 +39,22 @@ public class CalculationOfTiles {
     }
 
     public static int getQuantityTiles(double aZone, double bZone, double aTile, double bTile) {
-        double temp = aZone / aTile * bZone / bTile;
-        double temp2 = aZone / bTile * bZone / aTile;
+        double temp = hs(aZone, aTile) * hs(bZone, bTile);
+//        System.out.println(temp);
+        double temp2 = hs(aZone, bTile) * hs(bZone, aTile);
+//        System.out.println(temp2);
         int result = getRoundQuantity(temp, temp2);
         System.out.println(result + " Tiles");
         return result;
+    }
+
+    public static double hs(double a, double b) {
+        double result = a / b;
+//        System.out.println(result);
+        int temp2 = (int) result;
+        double temp = temp2 == result ? result : temp2 + 1;
+//        System.out.println(temp);
+        return temp;
     }
 
     public static int getRoundQuantity(double a, double b) {
