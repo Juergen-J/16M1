@@ -16,7 +16,7 @@ public class Homework27 {
         System.out.println(starOut("ab*cd"));// → "ad"
         System.out.println(starOut("ab**cd"));// → "ad"
         System.out.println(starOut("sm*eilly"));// → "silly"
-        System.out.println(starOut("*sm*eilly*"));// → "ill"
+        System.out.println(starOut("*sm***eilly*"));// → "ill"
 
         System.out.println("**************#8");
         System.out.println(countHi("abc hi ho"));// → 1
