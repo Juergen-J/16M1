@@ -16,6 +16,7 @@ public class Homework27 {
         System.out.println(starOut("ab*cd"));// → "ad"
         System.out.println(starOut("ab**cd"));// → "ad"
         System.out.println(starOut("sm*eilly"));// → "silly"
+        System.out.println(starOut("*sm*eilly*"));// → "ill"
 
         System.out.println("**************#8");
         System.out.println(countHi("abc hi ho"));// → 1
@@ -54,6 +55,18 @@ public class Homework27 {
         String result = "";
         char[] temp = str.toCharArray();
         for (int i = 0; i < temp.length; i++) {
+            if (i == 0 && temp[i] == '*') {
+                temp[i] = '!';
+                if (Character.isLetter(str.charAt(i + 1))) {
+                    temp[i + 1] = '!';
+                }
+            }
+            if (i == temp.length - 1 && temp[i] == '*') {
+                temp[i] = '!';
+                if (Character.isLetter(str.charAt(i - 1))) {
+                    temp[i - 1] = '!';
+                }
+            }
             if (temp[i] == '*') {
                 temp[i] = '!';
                 if (Character.isLetter(str.charAt(i - 1))) {
