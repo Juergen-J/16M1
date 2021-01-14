@@ -5,38 +5,36 @@ import library.PrintArray;
 public class Homework29 {
     public static void main(String[] args) {
         System.out.println(checkPalindrom("А роза упала на лапу Азора"));// -> true
-        //System.out.println(checkPalindrom("поп"));// -> true
-        //System.out.println(checkPalindrom("школа"));// -> false
+        System.out.println(checkPalindrom("поп"));// -> true
+        System.out.println(checkPalindrom("школа"));// -> false
     }
 
     private static boolean checkPalindrom(String str) {
-        reverseString(str);
-        return false;
+        String temp = reverseString(str);
+        //System.out.println(temp);
+        return getStringWithoutSpace(str).equals(temp);
     }
 
     public static String reverseString(String str) {
-        String temp = str.toLowerCase();
-        getStringWithoutSpace(temp);
-        System.out.println(temp);
-        return "";
+        String output = "";
+        String temp = getStringWithoutSpace(str);
+        for (int i = temp.length() - 1; i >= 0; i--) {
+            output += temp.charAt(i);
+        }
+//        System.out.println(output);
+        return output;
     }
 
     public static String getStringWithoutSpace(String str) {
         String result = "";
-        int count = 0;
+        str = str.toLowerCase();
         char[] temp = str.toCharArray();
-        for (int i = 0; i < temp.length; i++) {
-            if (Character.isSpaceChar(temp[i])) {
-                count++;
+        for (int j = 0; j < str.length(); j++) {
+            if (Character.isLetter(str.charAt(j))) {
+                result += temp[j];
             }
         }
-        char[] resultTemp = new char[temp.length - count];
-//        for (int j = 0; j < temp.length; j++) {
-//            if (!Character.isSpaceChar(temp[j])) {
-//                resultTemp[j] = temp[j];
-//            }
-//        }
-        PrintArray.PrintCharArray(resultTemp);
+        //System.out.println(result);
         return result;
     }
 
