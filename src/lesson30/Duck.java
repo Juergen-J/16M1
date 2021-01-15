@@ -1,9 +1,11 @@
 package lesson30;
 
 public class Duck {
+    String name;
     String bred;
     int age;
     String color;
+    int rangeAge;
 
     void quacks() {
         System.out.println("Duck quacks");
@@ -13,8 +15,9 @@ public class Duck {
         System.out.println("Duck eats");
     }
 
-    void swims() {
-        System.out.println("Duck swims");
+    void swims(int meter) {
+        System.out.println(name + " Duck swims");
+        rangeAge += meter;
     }
 
     void flies() {
@@ -25,11 +28,19 @@ public class Duck {
 
 class DuckTest {
     public static void main(String[] args) {
-        Duck donald= new Duck();
-        Duck daisy= new Duck();
+        Duck donald = new Duck();
+        donald.name = "Donald";
+
+        Duck daisy = new Duck();
+        daisy.name = "Daisy";
+        daisy.swims(100);
+
+        System.out.println("Total: " + daisy.rangeAge);
+
+        Duck[] duckArr = new Duck[]{donald, daisy};
+        System.out.println(duckArr[0].name);
 
 
-        Duck[] duckArr= new Duck[]{donald,daisy};
     }
 
 }
