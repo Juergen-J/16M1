@@ -5,7 +5,7 @@ import library.PrintArray;
 
 import javax.management.relation.RelationSupport;
 
-public class Array26_ {
+public class Array26_27 {
     public static void main(String[] args) {
         System.out.println("*******************#26");
         frontPiece(new int[]{1, 2, 3});// → [1, 2]
